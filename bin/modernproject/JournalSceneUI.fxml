@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="992.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.JournalSceneUIController">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="1026.0">
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="titleLabel" />
+         </styleClass>
+         <children>
+            <Label text="Task Manager" textFill="#1000c7">
+               <font>
+                  <Font name="EE-Alturas" size="37.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="12.0" top="15.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../images/Pencil.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="74.0" prefHeight="48.0" prefWidth="999.0">
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="sidebar" />
+         </styleClass>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../images/Home.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="homeButton" mnemonicParsing="false" onAction="#homeButtonAction" prefHeight="46.0" prefWidth="214.0" style="-fx-background-color: transparent;" text="Home" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="11.0" prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Task.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="taskButton" mnemonicParsing="false" onAction="#taskButtonAction" prefHeight="46.0" prefWidth="225.0" style="-fx-background-color: transparent;" text="Tasks" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="211.0" layoutY="11.0" prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Calendar.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="calendarButton" mnemonicParsing="false" onAction="#calendarButtonAction" prefHeight="48.0" prefWidth="205.0" style="-fx-background-color: transparent;" text="Calendar" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="611.0" layoutY="11.0" prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Journal.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="journalButton" mnemonicParsing="false" onAction="#journalButtonAction" prefHeight="46.0" prefWidth="229.0" style="-fx-background-color: transparent;" text="Journal" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox layoutY="74.0" prefHeight="48.0" prefWidth="16.0">
+         <styleClass>
+            <String fx:value="sidebar" />
+            <String fx:value="container-border" />
+         </styleClass>
+      </VBox>
+      <VBox layoutX="1010.0" layoutY="74.0" prefHeight="48.0" prefWidth="16.0">
+         <styleClass>
+            <String fx:value="sidebar" />
+            <String fx:value="container-border" />
+         </styleClass>
+      </VBox>
+      <AnchorPane layoutY="122.0" prefHeight="478.0" prefWidth="1026.0" style="-fx-background-color: #424874;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="178.0" prefWidth="753.0" style="-fx-background-color: #DCD6F7; -fx-border-color: white; -fx-border-width: 2px;">
+               <children>
+                  <Text fill="#424874" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a Journal Entry:" underline="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Rubik Regular" size="24.0" />
+                     </font></Text>
+                  <HBox layoutX="23.0" layoutY="37.0" prefHeight="27.0" prefWidth="563.0">
+                     <children>
+                        <Text fill="#424874" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Entry :">
+                           <font>
+                              <Font name="ZCOOL QingKe HuangYou Regular" size="22.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="nameField" prefHeight="27.0" prefWidth="441.0" promptText="Insert Name of Entry Here ..." style="-fx-text-fill: black;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="entryField" layoutX="22.0" layoutY="68.0" prefHeight="105.0" prefWidth="563.0" promptText="Write the entry in this area ..." style="-fx-text-fill: black; -fx-font-size: 14px;" wrapText="true" />
+                  <Button fx:id="createBtn" layoutX="601.0" layoutY="100.0" mnemonicParsing="false" onAction="#createBtnAction" prefHeight="67.0" prefWidth="143.0" style="-fx-border-color: white; -fx-border-width: 2px;" text="Create Entry" textAlignment="CENTER">
+                     <font>
+                        <Font name="ZCOOL QingKe HuangYou Regular" size="21.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#424874" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="clearBtn" layoutX="601.0" layoutY="35.0" mnemonicParsing="false" onAction="#clearBtnAction" prefHeight="60.0" prefWidth="143.0" style="-fx-border-color: white; -fx-border-width: 2px;" text="Clear Text" textAlignment="CENTER">
+                     <effect>
+                        <DropShadow color="#424874" />
+                     </effect>
+                     <font>
+                        <Font name="ZCOOL QingKe HuangYou Regular" size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow color="WHITE" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="203.0" prefHeight="262.0" prefWidth="999.0" style="-fx-background-color: #DCD6F7; -fx-border-color: white; -fx-border-width: 2px;">
+               <children>
+                  <Text fill="#424874" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entries:" underline="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Rubik Regular" size="24.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="entryList" fixedCellSize="35.0" layoutX="17.0" layoutY="46.0" onMouseClicked="#handleMouseClick" prefHeight="203.0" prefWidth="143.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+                  <TextArea fx:id="displayArea" editable="false" layoutX="157.0" layoutY="46.0" prefHeight="203.0" prefWidth="675.0" style="-fx-text-fill: black; -fx-border-color: #424874; -fx-border-width: 3px;" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="popBtn" layoutX="842.0" layoutY="46.0" mnemonicParsing="false" onAction="#popBtnAction" prefHeight="203.0" prefWidth="143.0" style="-fx-border-color: white; -fx-border-width: 2px;" text="Remove Latest" textAlignment="CENTER">
+                     <effect>
+                        <DropShadow color="#424874" />
+                     </effect>
+                     <font>
+                        <Font name="ZCOOL QingKe HuangYou Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow color="WHITE" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="785.0" layoutY="14.0" prefHeight="178.0" prefWidth="182.0" style="-fx-background-color: #DCD6F7; -fx-border-color: white; -fx-border-width: 2px;">
+               <effect>
+                  <DropShadow color="WHITE" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+               <children>
+                  <ImageView fitHeight="165.0" fitWidth="174.0" layoutX="9.0" layoutY="7.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/thinking.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

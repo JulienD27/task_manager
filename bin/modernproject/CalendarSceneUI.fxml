@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.CalendarSceneUIController">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="1026.0">
+         <styleClass>
+            <String fx:value="titleLabel" />
+            <String fx:value="container-border" />
+         </styleClass>
+         <children>
+            <Label text="Task Manager" textFill="#1000c7">
+               <font>
+                  <Font name="EE-Alturas" size="37.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/PENCIL.PNG" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" top="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="74.0" prefHeight="48.0" prefWidth="999.0">
+         <styleClass>
+            <String fx:value="sidebar" />
+            <String fx:value="container-border" />
+         </styleClass>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Home.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="homeButton" mnemonicParsing="false" onAction="#homeButtonAction" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: transparent;" text="Home" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="11.0" prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Task.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="taskButton" mnemonicParsing="false" onAction="#taskButtonAction" prefHeight="46.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Tasks" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="211.0" layoutY="11.0" prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Calendar.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="calendarButton" mnemonicParsing="false" onAction="#calendarButtonAction" prefHeight="46.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="Calendar" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="611.0" layoutY="11.0" prefHeight="100.0" prefWidth="249.75" styleClass="btns">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Journal.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="journalButton" mnemonicParsing="false" onAction="#journalButtonAction" prefHeight="46.0" prefWidth="225.0" style="-fx-background-color: transparent;" text="Journal" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox layoutY="74.0" prefHeight="48.0" prefWidth="15.0">
+         <styleClass>
+            <String fx:value="sidebar" />
+            <String fx:value="container-border" />
+         </styleClass>
+      </VBox>
+      <VBox layoutX="1012.0" layoutY="74.0" prefHeight="48.0" prefWidth="14.0">
+         <styleClass>
+            <String fx:value="sidebar" />
+            <String fx:value="container-border" />
+         </styleClass>
+      </VBox>
+      <AnchorPane layoutX="-1.0" layoutY="121.0" prefHeight="479.0" prefWidth="1027.0" style="-fx-background-color: #424874;">
+         <children>
+            <AnchorPane layoutX="8.0" layoutY="6.0" prefHeight="462.0" prefWidth="1011.0" style="-fx-background-color: #DCD6F7; -fx-border-color: white; -fx-border-width: 2px;">
+               <effect>
+                  <DropShadow color="WHITE" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+               <children>
+                  <Text layoutX="10.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a Year:">
+                     <font>
+                        <Font name="ZCOOL QingKe HuangYou Regular" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a Month:">
+                     <font>
+                        <Font name="ZCOOL QingKe HuangYou Regular" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calendar Settings:" underline="true">
+                     <font>
+                        <Font name="Rubik Regular" size="22.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="yearCombo" layoutX="125.0" layoutY="126.0" prefHeight="27.0" prefWidth="110.0" />
+                  <ComboBox fx:id="monthCombo" layoutX="125.0" layoutY="161.0" prefHeight="27.0" prefWidth="110.0" />
+                  <Label fx:id="calendarLabel" layoutX="525.0" layoutY="8.0" text="Month Year">
+                     <font>
+                        <Font name="ZCOOL QingKe HuangYou Regular" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="createBtn" layoutX="20.0" layoutY="214.0" mnemonicParsing="false" onAction="#createBtnAction" prefHeight="51.0" prefWidth="205.0" text="Create Calendar">
+                     <font>
+                        <Font name="ZCOOL QingKe HuangYou Regular" size="29.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="calendarTableView" layoutX="240.0" layoutY="53.0" prefHeight="401.0" prefWidth="761.0" style="-fx-text-fill: black; -fx-border-color: white; -fx-border-width: 2px;">
+                    <columns>
+                      <TableColumn fx:id="monthColumn" editable="false" prefWidth="78.0" resizable="false" text="Month" />
+                      <TableColumn fx:id="dayColumn" editable="false" prefWidth="49.0" resizable="false" text="Day" />
+                        <TableColumn fx:id="dwColumn" editable="false" prefWidth="89.0" resizable="false" text="Day of Week" />
+                        <TableColumn fx:id="taskColumn" editable="false" prefWidth="280.0" text="Task Deadlines" />
+                        <TableColumn fx:id="eventColumn" editable="false" minWidth="0.0" prefWidth="262.0" text="Events" />
+                    </columns>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

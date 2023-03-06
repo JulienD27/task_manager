@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="775.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.LoginSceneUIController">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="776.0">
+         <styleClass>
+            <String fx:value="titleLabel" />
+            <String fx:value="container-border" />
+         </styleClass>
+         <children>
+            <Label text="Task Manager" textFill="#1000c7">
+               <font>
+                  <Font name="EE-Alturas" size="37.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Pencil.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" top="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutY="75.0" prefHeight="50.0" prefWidth="776.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="sidebar" />
+         </styleClass>
+         <children>
+            <HBox prefHeight="48.0" prefWidth="797.0" styleClass="btns">
+               <children>
+                  <Button fx:id="homeButton" mnemonicParsing="false" onAction="#homeButtonAction" prefHeight="48.0" prefWidth="813.0" text="Go Home" textFill="#1000c7">
+                     <font>
+                        <Font name="EE-Alturas" size="22.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="container-border" />
+                        <String fx:value="sidebar" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutY="124.0" prefHeight="377.0" prefWidth="388.0">
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="titleLabel" />
+         </styleClass>
+         <children>
+            <ImageView fitHeight="321.0" fitWidth="366.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/skeleton.gif" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow height="27.07" radius="19.1075" width="51.36" />
+               </effect>
+            </ImageView>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="388.0" layoutY="124.0" prefHeight="377.0" prefWidth="388.0">
+         <children>
+            <TextField fx:id="userNameField" layoutX="49.0" layoutY="126.0" prefHeight="27.0" prefWidth="281.0" promptText="Username" style="-fx-background-color: transparent;" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </TextField>
+            <Line endX="180.0" layoutX="149.0" layoutY="153.0" startX="-100.0" />
+            <Line endX="180.0" layoutX="151.0" layoutY="193.0" startX="-100.0" />
+            <Button fx:id="loginButton" layoutX="130.0" layoutY="249.0" mnemonicParsing="false" onAction="#loginButtonAction" text="Log In" textFill="#1000c7">
+               <font>
+                  <Font name="EE-Alturas" size="20.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="container-border" />
+                  <String fx:value="titleLabel" />
+               </styleClass>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="67.0" layoutY="14.0" prefHeight="94.0" prefWidth="255.0" text="Please enter your username and password below." textAlignment="CENTER" textFill="#1000c7" wrapText="true">
+               <font>
+                  <Font name="EE-Alturas" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="49.0" layoutY="166.0" prefHeight="27.0" prefWidth="281.0" promptText="Password" style="-fx-background-color: transparent;" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </PasswordField>
+         </children>
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="sidebar" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>
