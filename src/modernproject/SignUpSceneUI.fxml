@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="775.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.SignUpSceneUIController">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="775.0">
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="titleLabel" />
+         </styleClass>
+         <children>
+            <Label text="Task Manager" textFill="#1000c7">
+               <font>
+                  <Font name="EE-Alturas" size="37.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Pencil.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" top="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutY="75.0" prefHeight="50.0" prefWidth="775.0">
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="sidebar" />
+         </styleClass>
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#homeButtonAction" prefHeight="141.0" prefWidth="1013.0" style="-fx-background-color: transparent;" text="Go Home" textFill="#1000c7">
+               <font>
+                  <Font name="EE-Alturas" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutY="125.0" prefHeight="377.0" prefWidth="325.0" style="-fx-background-color: #000;" styleClass="container-border">
+         <children>
+            <ImageView fitHeight="359.0" fitWidth="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/fireworks.gif" />
+               </image>
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="325.0" layoutY="125.0" prefHeight="377.0" prefWidth="450.0">
+         <children>
+            <TextField fx:id="fnText" layoutX="64.0" layoutY="92.0" prefHeight="27.0" prefWidth="325.0" promptText="First Name" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lnText" layoutX="64.0" layoutY="129.0" prefHeight="27.0" prefWidth="325.0" promptText="Last Name" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="userText" layoutX="64.0" layoutY="166.0" prefHeight="27.0" prefWidth="325.0" promptText="Username" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="106.0" layoutY="23.0" prefHeight="56.0" prefWidth="242.0" text="Please input the information below" textAlignment="CENTER" textFill="#1000c7" wrapText="true">
+               <font>
+                  <Font name="EE-Alturas" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="signButton" layoutX="156.0" layoutY="301.0" mnemonicParsing="false" onAction="#signButtonAction" text="Sign Up" textFill="#1000c7">
+               <font>
+                  <Font name="EE-Alturas" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <styleClass>
+                  <String fx:value="container-border" />
+                  <String fx:value="titleLabel" />
+               </styleClass>
+            </Button>
+            <TextField fx:id="hiddenPass" layoutX="64.0" layoutY="204.0" prefHeight="27.0" prefWidth="325.0" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="hiddenConfirm" layoutX="64.0" layoutY="240.0" prefHeight="27.0" prefWidth="325.0" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passText" layoutX="64.0" layoutY="204.0" prefHeight="27.0" prefWidth="325.0" promptText="Password" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="confirmText" layoutX="64.0" layoutY="240.0" prefHeight="27.0" prefWidth="325.0" promptText="Confirm Password" styleClass="login-input">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+               </font>
+            </PasswordField>
+            <CheckBox fx:id="showPassword" layoutX="64.0" layoutY="275.0" mnemonicParsing="false" onAction="#showPasswordAction" opacity="0.54" text="Show Password" textFill="#1000c7">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="10.0" />
+               </font>
+            </CheckBox>
+         </children>
+         <styleClass>
+            <String fx:value="container-border" />
+            <String fx:value="sidebar" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>

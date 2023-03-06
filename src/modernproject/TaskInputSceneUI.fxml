@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="600.0" style="-fx-background-color: #03216B; -fx-border-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.TaskInputSceneUIController">
+   <children>
+      <HBox layoutX="243.0" layoutY="8.0" prefHeight="56.0" prefWidth="100.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Input" wrappingWidth="99.23216247558594">
+               <font>
+                  <Font name="ZCOOL QingKe HuangYou Regular" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Button fx:id="doneBtn" layoutX="434.0" layoutY="325.0" mnemonicParsing="false" onAction="#doneBtnAction" prefHeight="29.0" prefWidth="140.0" style="-fx-background-color: #8FC4F0; -fx-border-color: white;" text="Done" />
+      <Button fx:id="cancelBtn" layoutX="279.0" layoutY="325.0" mnemonicParsing="false" onAction="#cancelBtnAction" prefHeight="29.0" prefWidth="140.0" style="-fx-background-color: #8FC4F0; -fx-border-color: white;" text="Cancel" />
+      <HBox layoutX="29.0" layoutY="67.0" prefHeight="40.0" prefWidth="310.0">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Name :">
+               <font>
+                  <Font name="ZCOOL QingKe HuangYou Regular" size="29.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="taskInput" prefHeight="27.0" prefWidth="184.0" promptText="Input Task">
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="343.0" layoutY="67.0" prefHeight="40.0" prefWidth="231.0">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Date :">
+               <font>
+                  <Font name="ZCOOL QingKe HuangYou Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Text>
+            <DatePicker fx:id="dateInput" prefHeight="27.0" prefWidth="152.0" promptText="Pick Date -----&gt;">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="107.0" prefHeight="43.0" prefWidth="549.0">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of Task : ">
+               <font>
+                  <Font name="ZCOOL QingKe HuangYou Regular" size="29.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="typeInput" prefHeight="27.0" prefWidth="417.0" promptText="Input Type">
+               <HBox.margin>
+                  <Insets left="2.0" top="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="150.0" prefHeight="40.0" prefWidth="139.0">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+               <font>
+                  <Font name="ZCOOL QingKe HuangYou Regular" size="29.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <padding>
+            <Insets top="8.0" />
+         </padding>
+      </HBox>
+      <TextArea fx:id="descInput" layoutX="27.0" layoutY="194.0" prefHeight="118.0" prefWidth="549.0" promptText="Input Description / Only Use Complete Sentences, No Line Breaks" wrapText="true" />
+   </children>
+</AnchorPane>
