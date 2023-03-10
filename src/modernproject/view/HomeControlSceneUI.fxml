@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1025.0" styleClass="parent" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.HomeControlSceneUIController">
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1025.0" styleClass="parent" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.controller.HomeControlSceneUIController">
    <children>
       <HBox prefHeight="75.0" prefWidth="1029.0">
          <children>
@@ -222,7 +222,7 @@
          <children>
             <ImageView fitHeight="260.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/studying.gif" />
+                  <Image url="@../../images/studying.gif" />
                </image>
             </ImageView>
             <HBox prefHeight="100.0" prefWidth="541.0">
@@ -260,7 +260,7 @@
             </HBox>
             <ImageView fitHeight="260.0" fitWidth="229.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/math.gif" />
+                  <Image url="@../../images/math.gif" />
                </image>
             </ImageView>
          </children></HBox>

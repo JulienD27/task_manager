@@ -12,7 +12,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.TaskSceneUIController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.controller.TaskSceneUIController">
    <children>
       <HBox prefHeight="75.0" prefWidth="1025.0">
          <children>
@@ -148,7 +148,7 @@
                      <children>
                         <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/plus.png" />
+                              <Image url="@../../images/plus.png" />
                            </image>
                         </ImageView>
                      </children>

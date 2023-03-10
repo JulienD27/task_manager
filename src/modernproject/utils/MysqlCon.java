@@ -1,4 +1,4 @@
-package modernproject;
+package modernproject.utils;
 
 import java.sql.*;
 

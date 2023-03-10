@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modernproject;
+package modernproject.controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -19,6 +19,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import modernproject.ModernProject;
+import modernproject.UserAction;
+import modernproject.UserInfo;
+
 import java.io.File;
 
 public class LoginSceneUIController implements Initializable {
@@ -31,7 +35,7 @@ public class LoginSceneUIController implements Initializable {
     }    
     
     @FXML private void homeButtonAction(ActionEvent event) throws IOException {
-        Parent homeControlParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
+        Parent homeControlParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
         Scene homeControlScene = new Scene(homeControlParent);
         Stage homeControlWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -55,7 +59,7 @@ public class LoginSceneUIController implements Initializable {
                     ModernProject.eventsLL.fileToList("eventList.txt");
                     ModernProject.journalLL.fileToList();
 
-                    Parent homeParent = FXMLLoader.load(getClass().getResource("HomeSceneUI.fxml"));
+                    Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeSceneUI.fxml"));
                     Scene homeScene = new Scene(homeParent);
                     Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
                     homeWindow.setScene(homeScene);
@@ -69,7 +73,7 @@ public class LoginSceneUIController implements Initializable {
                     alert.setContentText("It seems that you have not signed up for our services!");
                     alert.showAndWait();
 
-                    Scene homeScene = new Scene(FXMLLoader.load(getClass().getResource("SignUpSceneUI.fxml")));
+                    Scene homeScene = new Scene(FXMLLoader.load(getClass().getResource("view/SignUpSceneUI.fxml")));
                     Stage homeWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     homeWindow.setScene(homeScene);
                     homeWindow.show();

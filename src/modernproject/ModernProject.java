@@ -16,7 +16,7 @@ public class ModernProject extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         //Opens the GUI Panels
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"))));
         stage.show();
         stage.setResizable(false);
         stage.setTitle("Task Manager");

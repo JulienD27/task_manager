@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="775.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.SignUpSceneUIController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="775.0" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.controller.SignUpSceneUIController">
    <children>
       <HBox prefHeight="75.0" prefWidth="775.0">
          <styleClass>
@@ -53,7 +53,7 @@
          <children>
             <ImageView fitHeight="359.0" fitWidth="323.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/fireworks.gif" />
+                  <Image url="@../../images/fireworks.gif" />
                </image>
                <HBox.margin>
                   <Insets top="25.0" />

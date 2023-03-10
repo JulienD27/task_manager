@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modernproject;
+package modernproject.controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -21,6 +21,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 import javafx.stage.Stage;
 import javafx.scene.control.cell.PropertyValueFactory;
+import modernproject.BuildCalendar;
+import modernproject.Deadlines;
+import modernproject.ErrorHandle;
+import modernproject.ModernProject;
 
 public class CalendarSceneUIController implements Initializable {
     @FXML private ComboBox<String> yearCombo;
@@ -43,7 +47,7 @@ public class CalendarSceneUIController implements Initializable {
     
     @FXML private void homeButtonAction(ActionEvent event) throws IOException {
     	if(ModernProject.signedUser != null) {
-    		Parent homeParent = FXMLLoader.load(getClass().getResource("HomeSceneUI.fxml"));
+    		Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             
@@ -52,7 +56,7 @@ public class CalendarSceneUIController implements Initializable {
             homeWindow.setResizable(false);
             homeWindow.setTitle("Task Manager");
     	} else {
-    		Parent homeParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
+    		Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             
@@ -64,7 +68,7 @@ public class CalendarSceneUIController implements Initializable {
     }
     
     @FXML private void taskButtonAction(ActionEvent event) throws IOException {
-        Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
+        Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
         Scene taskScene = new Scene(taskParent);
         Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -75,7 +79,7 @@ public class CalendarSceneUIController implements Initializable {
     }
 
     @FXML private void calendarButtonAction(ActionEvent event) throws IOException {
-        Scene calendarScene = new Scene(FXMLLoader.load(getClass().getResource("CalendarSceneUI.fxml")));
+        Scene calendarScene = new Scene(FXMLLoader.load(getClass().getResource("view/CalendarSceneUI.fxml")));
         Stage calendarWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         calendarWindow.setScene(calendarScene);
         calendarWindow.show();
@@ -84,7 +88,7 @@ public class CalendarSceneUIController implements Initializable {
     }
 
     @FXML private void journalButtonAction(ActionEvent event) throws IOException {
-        Parent journalParent = FXMLLoader.load(getClass().getResource("JournalSceneUI.fxml"));
+        Parent journalParent = FXMLLoader.load(getClass().getResource("view/JournalSceneUI.fxml"));
         Scene journalScene = new Scene(journalParent);
         Stage journalWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         journalWindow.setScene(journalScene);

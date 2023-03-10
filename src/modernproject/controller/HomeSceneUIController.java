@@ -1,4 +1,4 @@
-package modernproject;
+package modernproject.controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -19,6 +19,9 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.scene.control.Label;
+import modernproject.ErrorHandle;
+import modernproject.ModernProject;
+
 import java.text.DecimalFormat;
 
 import static modernproject.ModernProject.*;
@@ -78,7 +81,7 @@ public class HomeSceneUIController implements Initializable{
     }
 
     @FXML void homeButtonAction(ActionEvent event) throws IOException {
-    	Parent taskParent = FXMLLoader.load(getClass().getResource("HomeSceneUI.fxml"));
+    	Parent taskParent = FXMLLoader.load(getClass().getResource("view/HomeSceneUI.fxml"));
         Scene taskScene = new Scene(taskParent);
         Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -89,7 +92,7 @@ public class HomeSceneUIController implements Initializable{
     }
 
     @FXML void taskButtonAction(ActionEvent event) throws IOException {
-    	Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
+    	Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
         Scene taskScene = new Scene(taskParent);
         Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -100,7 +103,7 @@ public class HomeSceneUIController implements Initializable{
     }
 
     @FXML void calendarButtonAction(ActionEvent event) throws IOException {
-    	Parent calendarParent = FXMLLoader.load(getClass().getResource("CalendarSceneUI.fxml"));
+    	Parent calendarParent = FXMLLoader.load(getClass().getResource("view/CalendarSceneUI.fxml"));
         Scene calendarScene = new Scene(calendarParent);
         Stage calendarWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -111,7 +114,7 @@ public class HomeSceneUIController implements Initializable{
     }
 
     @FXML void journalButtonAction(ActionEvent event) throws IOException {
-    	Parent journalParent = FXMLLoader.load(getClass().getResource("JournalSceneUI.fxml"));
+    	Parent journalParent = FXMLLoader.load(getClass().getResource("view/JournalSceneUI.fxml"));
         Scene journalScene = new Scene(journalParent);
         Stage journalWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         journalWindow.setScene(journalScene);
@@ -129,7 +132,7 @@ public class HomeSceneUIController implements Initializable{
     	setLL();
     	setSortedLL();
     	
-    	Parent taskParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
+    	Parent taskParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
         Scene taskScene = new Scene(taskParent);
         Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         

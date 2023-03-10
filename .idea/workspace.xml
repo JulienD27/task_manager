@@ -5,8 +5,33 @@
       <artifact name="TaskManager" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bb7d0aa-b7dd-403b-acd9-a49914b481af" name="Default Changelist" comment="" />
+    <list default="true" id="2bb7d0aa-b7dd-403b-acd9-a49914b481af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modernproject/MysqlCon.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modernproject/MysqlCon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/CalendarSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/CalendarSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/CalendarSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/CalendarSceneUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeControlSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/HomeControlSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeControlSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/HomeControlSceneUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/HomeSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/HomeSceneUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/JournalSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/JournalSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/JournalSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/JournalSceneUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/LoginSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/LoginSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/LoginSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/LoginSceneUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/ModernProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/ModernProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/ModernStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/ModernStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/MysqlCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/utils/MysqlCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/SignUpSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/SignUpSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/SignUpSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/SignUpSceneUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskInputSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/TaskInputSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskInputSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/TaskInputSceneUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/TaskSceneUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/TaskSceneUIController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,12 +66,12 @@
     <setting file="file://$PROJECT_DIR$/src/modernproject/Entry.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/modernproject/ErrorHandle.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/modernproject/LinkedList.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/modernproject/LoginSceneUIController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/modernproject/StackLinkedList.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/modernproject/TaskSceneUIController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/modernproject/Tasks.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/modernproject/UserAction.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/modernproject/UserInfo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/modernproject/controller/LoginSceneUIController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/modernproject/controller/TaskSceneUIController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -119,20 +144,20 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;V:/INFO-NEV/BUT-INFO-NEV-2-CDV_APP/jd594217/Semestre 4/SAE/mysql-connector-java-8.0.25.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mj396287/OneDrive - Université de Bourgogne/A2/S4/SAE/task_manager&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MysqlCon">
-    <configuration name="ModernProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.modernproject.utils.MysqlCon">
+    <configuration name="modernproject.ModernProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="modernproject.ModernProject" />
       <module name="ModernProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="modernproject.*" />
+          <option name="PATTERN" value="modernproject.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +165,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MysqlCon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="modernproject.MysqlCon" />
+    <configuration name="modernproject.utils.MysqlCon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="modernproject.utils.MysqlCon" />
       <module name="ModernProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="modernproject.*" />
+          <option name="PATTERN" value="modernproject.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MysqlCon" />
-        <item itemvalue="Application.ModernProject" />
+        <item itemvalue="Application.modernproject.utils.MysqlCon" />
+        <item itemvalue="Application.modernproject.ModernProject" />
       </list>
     </recent_temporary>
   </component>

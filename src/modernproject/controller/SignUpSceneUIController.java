@@ -1,4 +1,4 @@
-package modernproject;
+package modernproject.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +16,10 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.control.PasswordField;
+import modernproject.ErrorHandle;
+import modernproject.ModernProject;
+import modernproject.UserAction;
+import modernproject.UserInfo;
 
 public class SignUpSceneUIController implements Initializable {
     @FXML private TextField fnText;
@@ -32,7 +36,7 @@ public class SignUpSceneUIController implements Initializable {
         // TODO
     }    
     @FXML private void homeButtonAction(ActionEvent event) throws IOException {
-        Parent homeControlParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
+        Parent homeControlParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
         Scene homeControlScene = new Scene(homeControlParent);
         Stage homeControlWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -74,7 +78,7 @@ public class SignUpSceneUIController implements Initializable {
                 userDir.mkdir();
             }
 
-            Parent homeParent = FXMLLoader.load(getClass().getResource("LoginSceneUI.fxml"));
+            Parent homeParent = FXMLLoader.load(getClass().getResource("view/LoginSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
 

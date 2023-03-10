@@ -1,4 +1,4 @@
-package modernproject;
+package modernproject.controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -13,6 +13,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import modernproject.ErrorHandle;
+import modernproject.ModernProject;
+import modernproject.Tasks;
+
 import java.time.LocalDate;
 
 public class TaskInputSceneUIController implements Initializable {
@@ -45,7 +49,7 @@ public class TaskInputSceneUIController implements Initializable {
 				alert.showAndWait();
 			}else {
 				ModernProject.taskLL.listToFile("taskList.txt");
-				Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
+				Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
 				Scene taskScene = new Scene(taskParent);
 				Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
 				taskWindow.setScene(taskScene);
@@ -57,7 +61,7 @@ public class TaskInputSceneUIController implements Initializable {
 	}
 
 	@FXML private void cancelBtnAction(ActionEvent event) throws IOException {
-		Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
+		Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
 		Scene taskScene = new Scene(taskParent);
 		Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
 

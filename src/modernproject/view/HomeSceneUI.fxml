@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1025.0" styleClass="parent" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.HomeSceneUIController">
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1025.0" styleClass="parent" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.controller.HomeSceneUIController">
    <children>
       <HBox prefHeight="74.0" prefWidth="1026.0" stylesheets="@ModernStyle.css">
          <styleClass>
