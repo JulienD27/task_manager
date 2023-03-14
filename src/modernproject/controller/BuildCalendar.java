@@ -1,8 +1,9 @@
-package modernproject;
+package modernproject.controller;
 
 import java.time.YearMonth;
 
 import javafx.scene.control.ComboBox;
+import modernproject.ModernProject;
 
 import java.util.Calendar;
 

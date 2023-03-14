@@ -15,7 +15,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import modernproject.ErrorHandle;
 import modernproject.ModernProject;
-import modernproject.Tasks;
+import modernproject.model.Tasks;
 
 import java.time.LocalDate;
 

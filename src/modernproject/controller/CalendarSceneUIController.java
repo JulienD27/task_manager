@@ -21,8 +21,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 import javafx.stage.Stage;
 import javafx.scene.control.cell.PropertyValueFactory;
-import modernproject.BuildCalendar;
-import modernproject.Deadlines;
+import modernproject.model.Deadlines;
 import modernproject.ErrorHandle;
 import modernproject.ModernProject;
 

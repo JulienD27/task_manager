@@ -1,4 +1,6 @@
-package modernproject;
+package modernproject.model;
+
+import modernproject.model.UserInfo;
 
 import java.io.BufferedInputStream;
 import java.io.File;

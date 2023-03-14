@@ -20,8 +20,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import modernproject.ModernProject;
-import modernproject.UserAction;
-import modernproject.UserInfo;
+import modernproject.model.UserAction;
+import modernproject.model.UserInfo;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package modernproject;
+package modernproject.model;
 
 public class Entry {
     private String name;

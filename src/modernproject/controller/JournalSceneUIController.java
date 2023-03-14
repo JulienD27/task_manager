@@ -18,7 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
-import modernproject.Entry;
+import modernproject.model.Entry;
 import modernproject.ModernProject;
 
 public class JournalSceneUIController implements Initializable {

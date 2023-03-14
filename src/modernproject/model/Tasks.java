@@ -1,10 +1,11 @@
-package modernproject;
+package modernproject.model;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 import javafx.scene.control.TextArea;
+import modernproject.ModernProject;
 
 public class Tasks implements Comparable<Tasks> {
     private String taskN;

@@ -14,9 +14,9 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import modernproject.ErrorHandle;
-import modernproject.Events;
+import modernproject.model.Events;
 import modernproject.ModernProject;
-import modernproject.Tasks;
+import modernproject.model.Tasks;
 
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;

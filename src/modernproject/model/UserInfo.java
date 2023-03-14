@@ -1,4 +1,4 @@
-package modernproject;
+package modernproject.model;
 
 public class UserInfo implements java.io.Serializable{
 	private String firstName;

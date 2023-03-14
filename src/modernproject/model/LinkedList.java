@@ -1,4 +1,7 @@
-package modernproject;
+package modernproject.model;
+
+import modernproject.controller.BuildCalendar;
+import modernproject.ModernProject;
 
 import java.io.*;
 import java.util.*;

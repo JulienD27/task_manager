@@ -11,26 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2bb7d0aa-b7dd-403b-acd9-a49914b481af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/modernproject/MysqlCon.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modernproject/MysqlCon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/CalendarSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/CalendarSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/CalendarSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/CalendarSceneUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeControlSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/HomeControlSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeControlSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/HomeControlSceneUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/HomeSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/HomeSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/HomeSceneUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/JournalSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/JournalSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/JournalSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/JournalSceneUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/LoginSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/LoginSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/LoginSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/LoginSceneUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/ModernProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/ModernProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/ModernStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/ModernStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/MysqlCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/utils/MysqlCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/SignUpSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/SignUpSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/SignUpSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/SignUpSceneUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskInputSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/TaskInputSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskInputSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/TaskInputSceneUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskSceneUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/view/TaskSceneUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modernproject/TaskSceneUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modernproject/controller/TaskSceneUIController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

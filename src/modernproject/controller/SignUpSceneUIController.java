@@ -18,8 +18,8 @@ import javafx.stage.Stage;
 import javafx.scene.control.PasswordField;
 import modernproject.ErrorHandle;
 import modernproject.ModernProject;
-import modernproject.UserAction;
-import modernproject.UserInfo;
+import modernproject.model.UserAction;
+import modernproject.model.UserInfo;
 
 public class SignUpSceneUIController implements Initializable {
     @FXML private TextField fnText;

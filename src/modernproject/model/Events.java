@@ -1,4 +1,4 @@
-package modernproject;
+package modernproject.model;
 
 public class Events implements Comparable<Events>{
     private String eName;
