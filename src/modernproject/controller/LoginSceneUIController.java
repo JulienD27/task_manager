@@ -35,7 +35,7 @@ public class LoginSceneUIController implements Initializable {
     }    
     
     @FXML private void homeButtonAction(ActionEvent event) throws IOException {
-        Parent homeControlParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
+        Parent homeControlParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
         Scene homeControlScene = new Scene(homeControlParent);
         Stage homeControlWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -59,7 +59,7 @@ public class LoginSceneUIController implements Initializable {
                     ModernProject.eventsLL.fileToList("eventList.txt");
                     ModernProject.journalLL.fileToList();
 
-                    Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeSceneUI.fxml"));
+                    Parent homeParent = FXMLLoader.load(getClass().getResource("HomeSceneUI.fxml"));
                     Scene homeScene = new Scene(homeParent);
                     Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
                     homeWindow.setScene(homeScene);
@@ -73,7 +73,7 @@ public class LoginSceneUIController implements Initializable {
                     alert.setContentText("It seems that you have not signed up for our services!");
                     alert.showAndWait();
 
-                    Scene homeScene = new Scene(FXMLLoader.load(getClass().getResource("view/SignUpSceneUI.fxml")));
+                    Scene homeScene = new Scene(FXMLLoader.load(getClass().getResource("SignUpSceneUI.fxml")));
                     Stage homeWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     homeWindow.setScene(homeScene);
                     homeWindow.show();

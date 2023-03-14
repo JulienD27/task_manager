@@ -35,7 +35,7 @@ public class JournalSceneUIController implements Initializable {
     
     @FXML private void homeButtonAction(ActionEvent event) throws IOException {
     	if(ModernProject.signedUser != null) {
-    		Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeSceneUI.fxml"));
+    		Parent homeParent = FXMLLoader.load(getClass().getResource("HomeSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             
@@ -44,7 +44,7 @@ public class JournalSceneUIController implements Initializable {
             homeWindow.setResizable(false);
             homeWindow.setTitle("Task Manager");
     	} else {
-    		Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
+    		Parent homeParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             
@@ -56,7 +56,7 @@ public class JournalSceneUIController implements Initializable {
     }
     
     @FXML private void taskButtonAction(ActionEvent event) throws IOException {
-        Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+        Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
         Scene taskScene = new Scene(taskParent);
         Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -67,7 +67,7 @@ public class JournalSceneUIController implements Initializable {
     }
 
     @FXML private void calendarButtonAction(ActionEvent event) throws IOException {
-        Parent calendarParent = FXMLLoader.load(getClass().getResource("view/CalendarSceneUI.fxml"));
+        Parent calendarParent = FXMLLoader.load(getClass().getResource("CalendarSceneUI.fxml"));
         Scene calendarScene = new Scene(calendarParent);
         Stage calendarWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -79,7 +79,7 @@ public class JournalSceneUIController implements Initializable {
     }
 
     @FXML private void journalButtonAction(ActionEvent event) throws IOException {
-        Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("view/JournalSceneUI.fxml")));
+        Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("JournalSceneUI.fxml")));
         Stage journalWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
 
         journalWindow.setScene(journalScene);
@@ -89,7 +89,7 @@ public class JournalSceneUIController implements Initializable {
     }
 
     @FXML private void clearBtnAction(ActionEvent event) throws IOException{
-        Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("view/JournalSceneUI.fxml")));
+        Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("JournalSceneUI.fxml")));
         Stage journalWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         journalWindow.setScene(journalScene);
         journalWindow.show();
@@ -111,7 +111,7 @@ public class JournalSceneUIController implements Initializable {
             ModernProject.journalLL.push(newEntry);
             ModernProject.journalLL.listToFile();
 
-            Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("view/JournalSceneUI.fxml")));
+            Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("JournalSceneUI.fxml")));
             Stage journalWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             journalWindow.setScene(journalScene);
             journalWindow.show();
@@ -133,7 +133,7 @@ public class JournalSceneUIController implements Initializable {
     @FXML private void popBtnAction(ActionEvent event) throws IOException {
         if(ModernProject.journalLL.pop()) {
             ModernProject.journalLL.listToFile();
-            Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("view/JournalSceneUI.fxml")));
+            Scene journalScene = new Scene(FXMLLoader.load(getClass().getResource("JournalSceneUI.fxml")));
             Stage journalWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             journalWindow.setScene(journalScene);
             journalWindow.show();

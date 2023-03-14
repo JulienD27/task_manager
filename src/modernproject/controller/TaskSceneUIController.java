@@ -50,7 +50,7 @@ public class TaskSceneUIController implements Initializable {
     
     @FXML private void homeButtonAction(ActionEvent event) throws IOException {
     	if(ModernProject.signedUser != null) {
-    		Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeSceneUI.fxml"));
+    		Parent homeParent = FXMLLoader.load(getClass().getResource("HomeSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             
@@ -59,7 +59,7 @@ public class TaskSceneUIController implements Initializable {
             homeWindow.setResizable(false);
             homeWindow.setTitle("Task Manager");
     	} else {
-    		Parent homeParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
+    		Parent homeParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             
@@ -71,7 +71,7 @@ public class TaskSceneUIController implements Initializable {
     }
     
     @FXML private void taskButtonAction(ActionEvent event) throws IOException {
-        Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+        Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
         Scene taskScene = new Scene(taskParent);
         Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -82,7 +82,7 @@ public class TaskSceneUIController implements Initializable {
     }
 
     @FXML private void calendarButtonAction(ActionEvent event) throws IOException {
-        Parent calendarParent = FXMLLoader.load(getClass().getResource("view/CalendarSceneUI.fxml"));
+        Parent calendarParent = FXMLLoader.load(getClass().getResource("CalendarSceneUI.fxml"));
         Scene calendarScene = new Scene(calendarParent);
         Stage calendarWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -94,7 +94,7 @@ public class TaskSceneUIController implements Initializable {
     }
 
     @FXML private void journalButtonAction(ActionEvent event) throws IOException {
-        Parent journalParent = FXMLLoader.load(getClass().getResource("view/JournalSceneUI.fxml"));
+        Parent journalParent = FXMLLoader.load(getClass().getResource("JournalSceneUI.fxml"));
         Scene journalScene = new Scene(journalParent);
         Stage journalWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         journalWindow.setScene(journalScene);
@@ -107,7 +107,7 @@ public class TaskSceneUIController implements Initializable {
     }
     
     @FXML private void addBtnAction(ActionEvent event) throws IOException {
-    	Parent inputParent = FXMLLoader.load(getClass().getResource("view/TaskInputSceneUI.fxml"));
+    	Parent inputParent = FXMLLoader.load(getClass().getResource("TaskInputSceneUI.fxml"));
         Scene inputScene = new Scene(inputParent);
         Stage inputWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -125,7 +125,7 @@ public class TaskSceneUIController implements Initializable {
             ModernProject.taskLL.listToFile("taskList.txt");
             ModernProject.setSortedLL();
 
-            Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+            Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
             Scene taskScene = new Scene(taskParent);
             Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             taskWindow.setScene(taskScene);
@@ -146,7 +146,7 @@ public class TaskSceneUIController implements Initializable {
             ModernProject.taskLL.fileToList("taskList.txt");
             ModernProject.setSortedLL();
 
-            Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+            Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
             Scene taskScene = new Scene(taskParent);
             Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             taskWindow.setScene(taskScene);
@@ -167,7 +167,7 @@ public class TaskSceneUIController implements Initializable {
             o.setDesc(edits[3]);
             ModernProject.taskLL.listToFile("taskList.txt");
 
-            Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+            Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
             Scene taskScene = new Scene(taskParent);
             Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             taskWindow.setScene(taskScene);
@@ -194,7 +194,7 @@ public class TaskSceneUIController implements Initializable {
             ModernProject.eventsLL.insert(o);
             ModernProject.eventsLL.listToFile("eventList.txt");
 
-            Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+            Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
             Scene taskScene = new Scene(taskParent);
             Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             taskWindow.setScene(taskScene);
@@ -211,7 +211,7 @@ public class TaskSceneUIController implements Initializable {
             ModernProject.eventsLL.removeNode(o);
             ModernProject.eventsLL.listToFile("eventList.txt");
 
-            Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+            Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
             Scene taskScene = new Scene(taskParent);
             Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
             taskWindow.setScene(taskScene);

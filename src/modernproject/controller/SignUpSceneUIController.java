@@ -36,7 +36,7 @@ public class SignUpSceneUIController implements Initializable {
         // TODO
     }    
     @FXML private void homeButtonAction(ActionEvent event) throws IOException {
-        Parent homeControlParent = FXMLLoader.load(getClass().getResource("view/HomeControlSceneUI.fxml"));
+        Parent homeControlParent = FXMLLoader.load(getClass().getResource("HomeControlSceneUI.fxml"));
         Scene homeControlScene = new Scene(homeControlParent);
         Stage homeControlWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -78,7 +78,7 @@ public class SignUpSceneUIController implements Initializable {
                 userDir.mkdir();
             }
 
-            Parent homeParent = FXMLLoader.load(getClass().getResource("view/LoginSceneUI.fxml"));
+            Parent homeParent = FXMLLoader.load(getClass().getResource("LoginSceneUI.fxml"));
             Scene homeScene = new Scene(homeParent);
             Stage homeWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
 

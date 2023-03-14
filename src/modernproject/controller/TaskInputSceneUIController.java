@@ -49,7 +49,7 @@ public class TaskInputSceneUIController implements Initializable {
 				alert.showAndWait();
 			}else {
 				ModernProject.taskLL.listToFile("taskList.txt");
-				Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+				Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
 				Scene taskScene = new Scene(taskParent);
 				Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
 				taskWindow.setScene(taskScene);
@@ -61,7 +61,7 @@ public class TaskInputSceneUIController implements Initializable {
 	}
 
 	@FXML private void cancelBtnAction(ActionEvent event) throws IOException {
-		Parent taskParent = FXMLLoader.load(getClass().getResource("view/TaskSceneUI.fxml"));
+		Parent taskParent = FXMLLoader.load(getClass().getResource("TaskSceneUI.fxml"));
 		Scene taskScene = new Scene(taskParent);
 		Stage taskWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
 

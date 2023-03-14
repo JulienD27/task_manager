@@ -1,6 +1,7 @@
 package modernproject.model;
 
 import modernproject.ModernProject;
+import modernproject.model.Entry;
 
 import java.io.File;
 import java.io.FileInputStream;

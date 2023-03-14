@@ -1,0 +1,42 @@
+.root{
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-border-width:5;
+}
+.parent{
+    -fx-background-color: #f2f2f2;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-border-width:5;
+}
+.sidebar{
+    -fx-background-color: #e8e7fe;
+}
+.mainUI{
+    -fx-background-color: #EBEFEB;
+}
+.titleLabel{
+    -fx-background-color: #ada7fc;
+}
+.btns{
+    -fx-background-color: transparent;
+}
+.btns:hover{
+    -fx-background-color: #dda5f3;
+}
+.text-input{
+    -fx-text-fill: white;
+}
+.login-input{
+    -fx-text-fill: #1000c7;
+}
+.container-border{
+    -fx-border-color:  #1000c7;
+}
+.container-gradient{
+    -fx-background-color: linear-gradient( #ada7fc, white, #ada7fc);
+}
+.img{
+    -fx-padding: 1px;
+    -fx-border-color: #1000c7;
+}

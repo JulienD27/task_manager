@@ -11,9 +11,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1025.0" styleClass="parent" stylesheets="@ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.controller.HomeSceneUIController">
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1025.0" styleClass="parent" stylesheets="@../ModernStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modernproject.controller.HomeSceneUIController">
    <children>
-      <HBox prefHeight="74.0" prefWidth="1026.0" stylesheets="@ModernStyle.css">
+      <HBox prefHeight="74.0" prefWidth="1026.0" stylesheets="@../ModernStyle.css">
          <styleClass>
             <String fx:value="titleLabel" />
             <String fx:value="container-border" />
@@ -224,7 +224,7 @@
                <children>
                   <HBox layoutX="6.0" layoutY="373.0" prefHeight="55.0" prefWidth="237.0" styleClass="btns">
                      <children>
-                        <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutBtnAction" prefHeight="79.0" prefWidth="237.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-style: dotted;" styleClass="btns" stylesheets="@ModernStyle.css" text="Log Out" textFill="WHITE" HBox.hgrow="ALWAYS">
+                        <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutBtnAction" prefHeight="79.0" prefWidth="237.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-style: dotted;" styleClass="btns" stylesheets="@../ModernStyle.css" text="Log Out" textFill="WHITE" HBox.hgrow="ALWAYS">
                            <font>
                               <Font name="ZCOOL QingKe HuangYou Regular" size="35.0" />
                            </font>

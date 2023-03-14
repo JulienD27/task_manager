@@ -42,7 +42,7 @@ public class HomeControlSceneUIController implements Initializable {
     }
     
     @FXML private void loginButtonAction(ActionEvent event) throws IOException{
-        Parent loginParent = FXMLLoader.load(getClass().getResource("view/LoginSceneUI.fxml"));
+        Parent loginParent = FXMLLoader.load(getClass().getResource("LoginSceneUI.fxml"));
         Scene loginScene = new Scene(loginParent);
         Stage loginWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
@@ -53,7 +53,7 @@ public class HomeControlSceneUIController implements Initializable {
     }
     
     @FXML private void signupButtonAction(ActionEvent event) throws IOException{
-        Parent signParent = FXMLLoader.load(getClass().getResource("view/SignUpSceneUI.fxml"));
+        Parent signParent = FXMLLoader.load(getClass().getResource("SignUpSceneUI.fxml"));
         Scene signScene = new Scene(signParent);
         Stage signWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         
